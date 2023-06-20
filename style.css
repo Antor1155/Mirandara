@@ -178,7 +178,7 @@ nav:hover div:first-child {
 
 /* heading name  */
 
-#builder {
+#builder{
     text-align: center;
     font-family: canopee, sans-serif;
     font-size: 28vw;
@@ -198,8 +198,10 @@ nav:hover div:first-child {
 /* second section article here  */
 
 #second-section{
-    /* background-color: red; */
+    /* background-color: rgb(124, 145, 145); */
     padding: 2vh 2vw;
+
+    display: flex;
 }
 
 #article-left{
@@ -207,6 +209,7 @@ nav:hover div:first-child {
     padding-top: 2vw;
     padding-right: 3vw;
     border-right: 1px solid #1d1d1b;
+    margin-right: 3vw;
 }
 
 
@@ -229,7 +232,7 @@ nav:hover div:first-child {
     font-weight: bold;
 }
 
-#article-left img{
+#second-section img{
     width: 100%;
     margin-bottom: 4vh;
 }
@@ -252,4 +255,50 @@ nav:hover div:first-child {
     float: left;
     padding: 0 .5vw;
     margin-right: 7px;
+}
+
+/* article right design  */
+#article-right img{
+    height: 47%;
+    object-fit: cover;
+    margin-bottom: 7vh;
+}
+#article-right p{
+    font-family: canopee;
+    text-transform: capitalize;
+    font-size: 7vw;
+    font-weight: bold;
+    width: 95%;
+
+    border-bottom: 1px solid;
+    line-height: 3vw;
+    margin-bottom: 4vw;
+
+    text-decoration: line-through 1px #573e31;
+}
+
+#article-right p:last-child{
+   margin-bottom: -4vw;
+}
+
+#inspiration {
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw;
+}
+
+#websiteT{
+    font-family: canopee, sans-serif;
+    font-size: 26vw;
+    color: var(--body-color);
+    background-color: #1d1d1b;
+    border-radius: 5px;
+    padding: 2vw;
+    line-height: 19vw;
+}
+
+#inspiration img{
+    width: 20vw;
 }
