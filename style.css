@@ -1,0 +1,170 @@
+@font-face {
+    font-family: oldLondon;
+    src: url(./font/old_london/OldLondon.ttf)
+}
+
+@font-face {
+    font-family: editorial;
+    src: url(./font/5f242a694256f02b944d5767_EditorialNew-Light.ttf)
+}
+
+@font-face {
+    font-family: domaine;
+    src: url(./font/5f242a69b1577e63266b4d72_DomaineDispCondMedium.ttf)
+}
+
+@font-face {
+    font-family: canopee;
+    src: url(./font/616fd1dd00cf6c70f978fc69_Canopee.ttf)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-color: #C3BBB2;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+body {
+    background-color: var(--body-color);
+    color: #1d1d1b;
+
+    font-family: editorial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #1d1d1b;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.5vh;
+
+    border-bottom: 1px solid black;
+}
+
+header small {
+    color: #68645f;
+}
+
+header h1 {
+    font-family: oldLondon, 'Times New Roman', Times, serif;
+    font-size: 3vh;
+    font-weight: 400;
+}
+
+nav div {
+    width: 2.5vw;
+    height: 2px;
+    margin: .5vh;
+    background-color: black;
+    transition: all .3s;
+}
+
+nav:hover div {
+    transform: translateX(3px);
+}
+
+nav:hover div:first-child {
+    transform: translateX(-3px);
+}
+
+/* first section design from here  */
+
+#first-section {
+
+    display: flex;
+    justify-content: space-evenly;
+
+    margin: 3vh 2vw;
+}
+
+#first-section div {
+    width: 30%;
+}
+
+#first-section img {
+    width: 100%;
+    border: 1px solid;
+}
+
+#first-section div:nth-child(odd) h3 {
+    font-family: canopee;
+    margin: 1vh 0;
+}
+
+#first-section div:nth-child(odd) span {
+    background-color: #B83B12;
+    padding: 4px;
+    border-radius: 4px;
+    font-size: .9rem;
+    color: var(--body-color);
+}
+
+#first-section div:nth-child(odd) p {
+    font-size: .8rem;
+}
+
+
+/* first section middle class */
+#first-section #middle-child {
+    text-align: center;
+    border: 1px solid;
+    border-top: none;
+    border-bottom: none;
+
+    align-self: stretch;
+
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+}
+
+#middle-child a {
+    font-size: 2.5rem;
+
+    font-weight: bold;
+    font-family: canopee;
+}
+
+#middle-child p:first-of-type {
+    font-size: 1.7rem;
+    margin: 3vh;
+}
+
+/* from here start the second section  */
+
+/* heading name  */
+
+#builder {
+    text-align: center;
+    font-family: canopee, sans-serif;
+    font-size: 27vw;
+    color: var(--body-color);
+    background-color: #1d1d1b;
+
+    width: 96%;
+    margin: auto;
+    border-radius: 5px;
+    line-height: 100%;
+}
