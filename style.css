@@ -60,6 +60,11 @@ header {
     padding: 3.5vh;
 
     border-bottom: 1px solid black;
+
+    position: sticky;
+    top: 0;
+    background-color: var(--body-color);
+    z-index: 55;
 }
 
 header small {
@@ -138,6 +143,7 @@ nav:hover div:first-child {
 
 
 /* first section middle class */
+
 #first-section #middle-child {
     text-align: center;
     border: 1px solid;
@@ -175,14 +181,75 @@ nav:hover div:first-child {
 #builder {
     text-align: center;
     font-family: canopee, sans-serif;
-    font-size: 27vw;
+    font-size: 28vw;
     color: var(--body-color);
     background-color: #1d1d1b;
 
+    padding-left: 0; 
+    padding-right: 0; 
     width: 96%;
     margin: auto;
     border-radius: 5px;
     line-height: 100%;
 
-    margin-bottom: 5vh;;
+    margin-bottom: 5vh;
+}
+
+/* second section article here  */
+
+#second-section{
+    /* background-color: red; */
+    padding: 2vh 2vw;
+}
+
+#article-left{
+    width: 32%;
+    padding-top: 2vw;
+    padding-right: 3vw;
+    border-right: 1px solid #1d1d1b;
+}
+
+
+
+#article-left h2{
+    font-family: canopee, sans-serif;
+    font-size: 8vw;
+    font-weight: 400;
+    letter-spacing: -.6vw;
+
+    line-height: 3vw;
+    border-bottom: 1px solid #68645f;
+    
+}
+#article-left h2:nth-child(2){
+    font-size: 11vw;
+    margin-top: 6vw;
+    margin-bottom: 4.5vw;
+    letter-spacing: 0vw;
+    font-weight: bold;
+}
+
+#article-left img{
+    width: 100%;
+    margin-bottom: 4vh;
+}
+
+#article-left p{
+    font-size: 2vw;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+#article-left p::first-letter{
+    font-size: 7vw;
+    font-weight: 500;
+    line-height: 6vw;
+    font-family: canopee, sans-serif;
+    font-feature-settings: "ss03";
+    margin-top: 1vh;
+
+    color: var(--body-color);
+    background-color: #1d1d1b;
+    float: left;
+    padding: 0 .5vw;
+    margin-right: 7px;
 }
