@@ -123,7 +123,7 @@ nav:hover div:first-child {
     transition: scale 1.5s;
 }
 
-.projectImg:hover  img{
+.projects:hover  img{
     scale: 1.15;
 }
 
@@ -482,6 +482,8 @@ nav:hover div:first-child {
     padding:0 1vw;
 
     line-height: 26vw;
+
+    border-radius: 5px;
 }
 
 
@@ -509,3 +511,80 @@ nav:hover div:first-child {
 }
 
 
+
+/* employee cards section starts form here  */
+#card-section{
+    margin: 3vw 2vw ;
+    padding-bottom: 5vw;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    border-bottom: 1px solid;
+}
+
+.card-wrapper{
+    border: 3px solid;
+    padding: 1vw;
+    border-radius: 5px;
+    width: 38vw;
+
+    background-color: var(--body-color);
+    box-shadow:0 3px 5px  rgba(0, 0, 0, 0.331);
+    transition:transform .5s;
+}
+
+.card-wrapper:not(:first-child){
+    margin-left: -20vw;
+}
+
+.card-wrapper:hover ~ .card-wrapper{
+    transform: translateX(15vw);
+}
+
+.card-wrapper:hover{
+    background-color: #B8AEA3;
+}
+
+.card {
+    padding: 2vw;
+    /* background-color: yellow; */
+    border: 2px dashed;
+    border-radius: 5px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card .big-font {
+    text-decoration:1px underline rgb(82, 76, 76, .4);
+}
+
+.card > div{
+    display: flex;
+    align-items: center;
+    margin-top: 3vw;
+}
+
+.card img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+    filter: grayscale(1);
+}
+
+.card strong{
+    font-family: canopee, sans-serif;
+    font-size: 2vw;
+}
+.card strong + P{
+    font-size: .9rem;
+}
+
+.card span{
+    text-decoration: underline;
+}
