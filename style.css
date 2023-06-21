@@ -97,7 +97,7 @@ nav:hover div:first-child {
 
 /* first section design from here  */
 
-#first-section {
+.first-section {
 
     display: flex;
     justify-content: space-evenly;
@@ -105,7 +105,7 @@ nav:hover div:first-child {
     margin: 4vh 2vw 5vh;
 }
 
-#first-section > div {
+.first-section > div {
     width: 30%;
 }
 
@@ -129,7 +129,7 @@ nav:hover div:first-child {
 
 .projects h3 {
     font-family: canopee;
-    margin: 1vh 0;
+    margin: 2vh 0;
 }
 
 .projects span {
@@ -163,14 +163,18 @@ nav:hover div:first-child {
 }
 
 .middle-child a{
-    font-size: 2.5rem;
-
+    font-size: 5vw;
     font-weight: bold;
     font-family: canopee;
+
+    outline: 1px solid;
+    outline-offset: -4vw;
+    transition:outline-offset 1s, background-color 1s;
 }
 
-#middle-child a:hover {
-
+.middle-child:hover a {
+    outline-offset: 0;
+    background-color: #B8AEA3;
 }
 
 .middle-child p:first-of-type {
@@ -313,6 +317,15 @@ nav:hover div:first-child {
     padding: 2vw;
     display: flex;
     justify-content: space-between;
+}
+
+#fourth-section a{
+    outline: none;
+    background-color: var(--body-color);
+    letter-spacing: -0.4vw;
+    font-family: domaine;
+    font-weight: 500;
+    line-height: 4vw;
 }
 
 .first-of-fourth{
@@ -515,13 +528,13 @@ nav:hover div:first-child {
 /* employee cards section starts form here  */
 #card-section{
     margin: 3vw 2vw ;
-    padding-bottom: 5vw;
+    padding-bottom: 6vw;
 
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
 
-    border-bottom: 1px solid;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 }
 
 .card-wrapper{
