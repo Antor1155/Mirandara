@@ -118,7 +118,8 @@ nav:hover div:first-child {
 
 .projectImg img {
     width: 100%;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
     transition: scale 1.5s;
 }
 
@@ -137,6 +138,7 @@ nav:hover div:first-child {
     border-radius: 4px;
     font-size: .9rem;
     color: var(--body-color);
+    margin-left: 5px;
 }
 
 .projects p {
@@ -274,13 +276,13 @@ nav:hover div:first-child {
 
     border-bottom: 1px solid;
     line-height: 3vw;
-    margin-bottom: 4vw;
+    margin-bottom: 5vw;
 
     text-decoration: line-through 1px #573e31;
 }
 
 #article-right p:last-child{
-   margin-bottom: -4vw;
+   margin-bottom: -10vw;
 }
 
 #inspiration {
@@ -343,7 +345,7 @@ nav:hover div:first-child {
     border: none;
 }
 #last-of-fourth{
-    margin: 1vw 0;
+    margin: 1vw 0 0 0;
     padding: 0;
     border: none;
 }
@@ -354,7 +356,7 @@ nav:hover div:first-child {
 
 
 #all-work-btn {
-    margin-top: 3vw;
+    margin-top: 2vw;
     border: 1px solid;
     height: 12vw;
     width:100% ;
@@ -392,4 +394,118 @@ nav:hover div:first-child {
 #all-work-btn:hover img{
     transform: translatex(0);
 }
+
+
+/* award section start here  */
+
+#awards{
+    /* background-color: aquamarine; */
+    margin:2vw;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.single-award{
+    display: flex;
+    align-items: center;
+}
+
+.single-award strong{
+    font-family: canopee, sans-serif;
+    font-size: 4vw;
+    font-weight: 500;
+}
+
+.single-award > strong{
+    font-size: 11vw;
+    margin-top: -1vw;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* fifth section start form here  */
+
+#fifth-section{
+    margin:4vw 2vw 2vw 2vw;
+}
+
+.first-container {
+    display: flex;
+}
+
+.first-container > div{
+    width: 50%;
+}
+
+.largeTxt{
+    font-family: canopee, sans-serif;
+    font-size: 27vw;
+    font-weight: 500;
+    line-height: 21vw;
+}
+
+.first-line img {
+    width: 30%;
+    height: 19vw;
+    border: 1px solid;
+}
+
+#avatar-2 {
+    width: 48vw;
+    height: 41vw;
+    object-fit: cover;
+}
+
+#second-container{
+    text-align: right;
+}
+
+#second-container img{
+    height: 19vw;
+    border: 1px solid;
+}
+
+#third-container {
+    display: flex;
+}
+
+#atrisan{
+    font-size: 23vw;
+    font-family: canopee, sans-serif;
+    background-color: #1d1d1b;
+    color: var(--body-color);
+    padding:0 1vw;
+
+    line-height: 26vw;
+}
+
+
+.third-section-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2vw;
+}
+
+.third-section-div strong{
+    font-size: 6vw;
+    font-family: canopee, sans-serif;
+    letter-spacing: -0.2vw;
+
+}
+.third-section-div span{
+    text-decoration: underline dashed;
+
+}
+
+.big-font{
+    font-size: 1.8vw;
+    /* background-color: yellow; */
+}
+
 
