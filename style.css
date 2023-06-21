@@ -124,12 +124,12 @@ nav:hover div:first-child {
     scale: 1.15;
 }
 
-#first-section div:nth-child(odd) h3 {
+.projects h3 {
     font-family: canopee;
     margin: 1vh 0;
 }
 
-#first-section div:nth-child(odd) span {
+.projects span {
     background-color: #B83B12;
     padding: 4px;
     border-radius: 4px;
@@ -137,7 +137,7 @@ nav:hover div:first-child {
     color: var(--body-color);
 }
 
-#first-section div:nth-child(odd) p {
+.projects p {
     font-size: .8rem;
 }
 
@@ -204,7 +204,7 @@ nav:hover div:first-child {
     display: flex;
 }
 
-#article-left{
+.article-left{
     width: 32%;
     padding-top: 2vw;
     padding-right: 3vw;
@@ -214,7 +214,7 @@ nav:hover div:first-child {
 
 
 
-#article-left h2{
+.article-left h2{
     font-family: canopee, sans-serif;
     font-size: 8vw;
     font-weight: 400;
@@ -224,7 +224,7 @@ nav:hover div:first-child {
     border-bottom: 1px solid #68645f;
     
 }
-#article-left h2:nth-child(2){
+.article-left h2:nth-child(2){
     font-size: 11vw;
     margin-top: 6vw;
     margin-bottom: 4.5vw;
@@ -237,12 +237,12 @@ nav:hover div:first-child {
     margin-bottom: 4vh;
 }
 
-#article-left p{
+.article-left p{
     font-size: 2vw;
     font-weight: 500;
     letter-spacing: -1px;
 }
-#article-left p::first-letter{
+.article-left p::first-letter{
     font-size: 7vw;
     font-weight: 500;
     line-height: 6vw;
@@ -307,9 +307,41 @@ nav:hover div:first-child {
 
 #fourth-section{
     padding: 2vw;
+    display: flex;
+    justify-content: space-between;
 }
 
-#fourth-section .middle-child{
+.first-of-fourth{
+    padding-right: 3vw;
+    margin-right: 3vw;
+    border-right: 1px solid;
+}
+
+.first-of-fourth > img{
+    width: 100%;
+
+}
+
+.to-flex{
+    display: flex;
+    margin-bottom: 3vw;
+}
+
+.to-flex > div{
+    width: 45%;
+}
+
+.to-flex .middle-child{
     text-align: start;
+    border-left: none;
+    padding-right: 3vw;
+    margin-right: 3vw;
+}
+
+.to-flex .projectImg{
+    border: none;
+}
+#last-of-fourth{
+    margin: 0;
     border: none;
 }
