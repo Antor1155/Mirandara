@@ -142,7 +142,7 @@ nav:hover div:first-child {
 }
 
 .projects p {
-    font-size: .8rem;
+    /* font-size: 1rem; */
 }
 
 
@@ -600,4 +600,46 @@ nav:hover div:first-child {
 
 .card span{
     text-decoration: underline;
+}
+
+
+/* email me section starts here  */
+#emailme{
+    margin: 2vw;
+    margin-bottom: 20vw;
+    padding: 2vw 0;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+
+    white-space: nowrap;
+    overflow:hidden ;
+}
+
+#emailme p {
+    font-size: 5vw;
+    display: inline-block;
+    margin-right: 20px;
+    /* background-color: red; */
+    animation: scroll 4s linear infinite;
+}
+
+#emailme:hover  p {
+    animation-play-state: paused;
+}
+
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(calc(-100% - 24px));
+    }
+}
+
+#emailme a{
+    font-family: canopee, sans-serif;
+    background-color: #1d1d1b;
+    color: var(--body-color);
+    padding: 0 5px;
 }
