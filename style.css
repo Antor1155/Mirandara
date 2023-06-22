@@ -67,7 +67,8 @@ header {
     position: sticky;
     top: 0;
     background-color: var(--body-color);
-    z-index: 55;
+    z-index: 5;
+    transition:background-color 1s;
 }
 
 header small {
@@ -80,6 +81,10 @@ header h1 {
     font-weight: 400;
 
     transform: translatex(-20%);
+}
+
+nav{
+    padding: 1vw;
 }
 
 nav div {
@@ -690,3 +695,32 @@ footer strong{
     transform: translateY(1vw);
     line-height: 1vw;
 }
+
+
+
+/* animating nav bar to change color and div rotation  */
+.black-nav{
+    background-color: #1d1d1b;
+    color: var(--body-color);
+}
+
+.black-nav div{
+    background-color: var(--body-color);
+}
+
+.black-nav nav:hover div:first-of-type{
+    transform:translateX(-3px) rotate(55deg);
+}
+.black-nav nav:hover div:last-of-type{
+    transform:translateX(3px) rotate(-55deg);
+}
+
+.black-nav div:first-of-type{
+    transform:rotate(55deg);
+    position: absolute;
+}
+
+.black-nav div:last-of-type{
+    transform:rotate(-55deg);
+}
+
