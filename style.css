@@ -797,7 +797,7 @@ footer strong{
 }
 
 #main-nav div:not(:last-of-type) a:hover{
-    letter-spacing: 0;
+    letter-spacing: -4px;
 }
 /* main active  */
 #main-nav.active a{
