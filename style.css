@@ -758,12 +758,13 @@ footer strong{
     justify-content: center;
     align-items: center;
     background-color: #1d1d1b;
-    transition: top 1s;
+    transition: top 1s 1s;
 }
 
 /* main active */
 #main-nav.active{
     top:0;
+    transition: top 1s 0s;
 }
 
 #main-nav div{
@@ -784,6 +785,7 @@ footer strong{
 /* main active  */
 #main-nav.active a{
     transform: translateY(0%);
+    transition: transform 1s 1s;
 }
 
 #main-nav .footer-link{
