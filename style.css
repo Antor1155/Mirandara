@@ -41,7 +41,7 @@ body {
 }
 
 body {
-    background-color: var(--body-color);
+    background-color: #1d1d1b;
     color: #1d1d1b;
 
     font-family: editorial, sans-serif;
@@ -49,6 +49,10 @@ body {
     user-select: none;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
+}
+
+main{
+    background-color: var(--body-color);
 }
 
 a {
@@ -60,7 +64,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3.5vh;
+    padding:0 3.5vh;
 
     border-bottom: 1px solid black;
 
@@ -81,6 +85,7 @@ header h1 {
     font-weight: 400;
 
     transform: translatex(-20%);
+    margin: 2vw;
 }
 
 nav{
@@ -88,11 +93,11 @@ nav{
 }
 
 nav div {
-    width: 2.5vw;
-    height: 2px;
+    width: 3vw;
+    height: 2.5px;
     margin: .5vh;
-    background-color: black;
-    transition: all .3s;
+    background-color: #1d1d1b;
+    transition: transform .5s;
 }
 
 nav:hover div {
@@ -715,12 +720,26 @@ footer strong{
     transform:translateX(3px) rotate(-55deg);
 }
 
-.black-nav div:first-of-type{
+.black-nav nav div:first-of-type{
     transform:rotate(55deg);
     position: absolute;
 }
 
-.black-nav div:last-of-type{
+.black-nav nav div:last-of-type{
     transform:rotate(-55deg);
 }
 
+#animating-line{
+    position: absolute;
+    height: 2px;
+    width: 60%;
+    background-color: var(--body-color);
+    bottom: 0;
+    left: 0;
+    transition: transform .5s 0s;
+}
+
+.black-nav #animating-line{
+    transform: translateX(100vw);
+    transition: transform 1s .4s;
+}
