@@ -32,7 +32,6 @@
 body::-webkit-scrollbar {
     display: none;
 }
-
 /* Hide scrollbar for IE, Edge and Firefox */
 body {
     -ms-overflow-style: none;
@@ -46,6 +45,10 @@ body {
     color: #1d1d1b;
 
     font-family: editorial, sans-serif;
+
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
 }
 
 a {
@@ -142,7 +145,7 @@ nav:hover div:first-child {
 }
 
 .projects p {
-    /* font-size: 1rem; */
+    font-size: 1.2vw;
 }
 
 
@@ -606,7 +609,7 @@ nav:hover div:first-child {
 /* email me section starts here  */
 #emailme{
     margin: 2vw;
-    margin-bottom: 20vw;
+    margin-bottom: 0;
     padding: 2vw 0;
     border-top: 1px solid;
     border-bottom: 1px solid;
@@ -642,4 +645,48 @@ nav:hover div:first-child {
     background-color: #1d1d1b;
     color: var(--body-color);
     padding: 0 5px;
+}
+
+/* footer section start form here  */
+
+footer {
+    padding:1vw 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+footer div:first-child{
+    display: flex;
+    align-items: center;
+}
+
+
+footer a{
+    font-family: canopee, sans-serif;
+    font-weight: 500;
+    font-size: 1.6vw;
+}
+
+footer a span{
+    font-family: editorial;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+footer img{
+    width: 2vw;
+    margin: 1vw;
+}
+
+footer div:last-child a{
+    font-size: 1.4vw;
+}
+
+footer strong{
+    margin: .2vw;
+    font-size: 4vw;
+    display: inline-block;
+    transform: translateY(1vw);
+    line-height: 1vw;
 }
