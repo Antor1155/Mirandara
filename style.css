@@ -95,7 +95,7 @@ nav div {
     height: 2.5px;
     margin: .5vh;
     background-color: #1d1d1b;
-    transition: transform .5s;
+    transition: transform .5s, background-color 1s;
 }
 
 nav:hover div {
@@ -797,12 +797,13 @@ footer strong{
 }
 
 #main-nav div:not(:last-of-type) a:hover{
-    letter-spacing: -4px;
+    letter-spacing: -1px;
 }
+
 /* main active  */
 #main-nav.active a{
     transform: translateY(0%);
-    transition: transform 1s .5s;
+    transition: transform 1s .5s, letter-spacing .5s;
 }
 
 #main-nav .footer-link{
@@ -813,7 +814,7 @@ footer strong{
 }
 #main-nav .footer-link a{
     font-size: 1vw;
-    margin-left: 3px;
+    margin-left: 10px;
 }
 
 
