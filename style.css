@@ -72,7 +72,7 @@ header {
     top: 0;
     background-color: var(--body-color);
     z-index: 5;
-    transition:background-color 1s;
+    transition:background-color 1s 1s;
 }
 
 header small {
@@ -83,8 +83,6 @@ header h1 {
     font-family: oldLondon, 'Times New Roman', Times, serif;
     font-size: 3vh;
     font-weight: 400;
-
-    /* transform: translatex(-20%); */
     margin: 2vw;
 }
 
@@ -707,6 +705,7 @@ footer strong{
 .black-nav{
     background-color: #191917;
     color: var(--body-color);
+    transition:background-color 1s;
 }
 
 .black-nav div{
@@ -735,12 +734,12 @@ footer strong{
     width: 60%;
     background-color: var(--body-color);
     bottom: 0;
-    left: 0;
-    transition: transform .5s 0s;
+    left: -100%;
+    transition: transform 1s 0s;
 }
 
 .black-nav #animating-line{
-    transform: translateX(100vw);
+    transform: translateX(200vw);
     transition: transform 1s .4s;
 }
 
@@ -759,7 +758,7 @@ footer strong{
     align-items: center;
     background-color: #1d1d1b;
 
-    transition: top 1s 1s;
+    transition: top 1s .5s;
 }
 
 /* main active */
@@ -793,10 +792,17 @@ footer strong{
     transition: transform 1s;
 }
 
+#main-nav div:not(:last-of-type) a{
+    letter-spacing: -5px;
+}
+
+#main-nav div:not(:last-of-type) a:hover{
+    letter-spacing: 0;
+}
 /* main active  */
 #main-nav.active a{
     transform: translateY(0%);
-    transition: transform 1s 1s;
+    transition: transform 1s .5s;
 }
 
 #main-nav .footer-link{
@@ -807,6 +813,7 @@ footer strong{
 }
 #main-nav .footer-link a{
     font-size: 1vw;
+    margin-left: 3px;
 }
 
 
