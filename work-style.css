@@ -1,6 +1,7 @@
 #work{
     display: flex;
     flex-wrap: nowrap;
+    height: 100vh;
 }
 
 #work header{
@@ -170,7 +171,7 @@
 .description{
     width: 35vw;
     text-align: center;
-    padding-top: 3vw;
+    padding-top: 4vw;
     font-family: canopee, sans-serif;
 
     display: flex;
@@ -181,6 +182,7 @@
     background-color: #cac3b9;
 
     transition: width .7s ease-in-out;
+
 }
 
 
@@ -214,6 +216,8 @@
 
 .description img{
     width: 35vw;
+    height: 45%;
+    object-fit: cover;
 }
 
 
