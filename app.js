@@ -6,4 +6,3 @@ nav.addEventListener("click", ()=>{
     header.classList.toggle("black-nav")
     mainNav.classList.toggle("active")
 })
-

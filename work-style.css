@@ -46,49 +46,13 @@
 }
 
 
-/* work section decoration starts here  */
-
-.work-card{
-    /* background-color: aqua; */
-    height: 100vh;
-    border: 1px solid #1d1d1bb8;
-    display: inline-block;
-    /* margin: 0; */
-    font-family: canopee, sans-serif;
-    font-size: 3vw;
-    padding:3vw 2vw;
-    writing-mode: vertical-lr;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.work-card p{
-    font-family: canopee, sans-serif;
-    font-size: 4vw;
-}
-
-.work-card small{
-    font-size: 1rem;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.work-card small span{
-    background-color: #B83B12;
-    color: var(--body-color);
-    padding: .2rem;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-
 
 
 /* featured section design here  */
 
 #featured {
-    width: 40%;
+    min-width: 40vw;
+    width: 40vw;
     padding: 3vw;
 }
 
@@ -132,4 +96,106 @@
     float: left;
     color: var(--body-color);
     background-color: #1d1d1b;
+}
+
+
+/* work section decoration starts here  */
+
+#work-section {
+    display: flex;
+}
+
+.work-card{
+    height: 100vh;
+    border: 1px solid #83837b;
+    display: inline-block;
+    /* margin: 0; */
+    font-family: canopee, sans-serif;
+    font-size: 3vw;
+    padding:3vw 2vw;
+    writing-mode: vertical-lr;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.work-card:hover{
+    background-color: #cac3b9;
+}
+
+.work-card p{
+    font-family: canopee, sans-serif;
+    font-size: 4vw;
+}
+
+.work-card small{
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.work-card small span{
+    background-color: #B83B12;
+    color: var(--body-color);
+    padding: .2rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+/* work projects section design stars here  */
+
+#work-section article{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.description{
+    width: 35vw;
+    text-align: center;
+    padding-top: 3vw;
+    font-family: canopee, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+
+    background-color: #cac3b9;
+
+    transition: width .7s ease-in-out;
+}
+
+
+.description.zero-width {
+    width: 0;
+}
+
+
+.description div{
+    width: 35vw;
+}
+
+.description strong{
+    font-weight: 500;
+    background-color: #1d1d1b;
+    color: var(--body-color);
+    margin: .5vw;
+}
+
+.description h3 {
+    font-size: 4vw;
+    width: 35vw;
+}
+
+.description p{
+    padding: 0 4vw;
+    font-family: editorial;
+    font-size: 1.2rem;
+    width: 35vw;
+}
+
+.description img{
+    width: 35vw;
 }
