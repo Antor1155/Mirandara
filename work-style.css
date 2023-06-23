@@ -242,7 +242,9 @@
 
 #talk{
     /* background-color: red; */
-    padding: 3vw 5vw 3vw 3vw;
+    margin: 3vw 0;
+    padding: 0 5vw 0 3vw;
+    border-left: 1px solid #1d1d1b;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
