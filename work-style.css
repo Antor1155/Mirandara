@@ -82,16 +82,13 @@
     font-size: 1.4rem;
 }
 
-#featured p{
-    font-size: 1.4rem;
-}
 #featured p::first-letter{
     font-size: 8vw;
     font-weight: 500;
     line-height: 6vw;
     font-family: canopee, sans-serif;
     font-feature-settings: "ss03";
-    margin:.5rem .3rem 0 .3rem;
+    margin:0 .3rem;
     padding:.4rem .2rem;
     float: left;
     color: var(--body-color);
