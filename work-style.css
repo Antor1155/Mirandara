@@ -1,11 +1,12 @@
 #work{
     display: flex;
+    flex-wrap: nowrap;
 }
 
 #work header{
     width: auto;
     height: 100vh;
-    position: static;
+    left: 0;
     writing-mode: vertical-lr;
     flex-direction: row-reverse;
     padding: 2vw 1vw;
@@ -45,6 +46,20 @@
     display: none;
 }
 
+/* scrollable section design here  */
+
+#scroll {
+    /* background-color: red; */
+    border-right: 10px solid yellow;
+    display: flex;
+    flex-wrap: nowrap;
+
+    position: relative;
+    left: 0;
+
+    transition: left 0.3s linear;
+}
+
 
 
 
@@ -78,11 +93,11 @@
     width: 27%;
 }
 
-#featured p{
+#featured p, #unexpected-time p{
     font-size: 1.4rem;
 }
 
-#featured p::first-letter{
+#featured p::first-letter, #unexpected-time p::first-letter{
     font-size: 8vw;
     font-weight: 500;
     line-height: 6vw;
@@ -195,4 +210,63 @@
 
 .description img{
     width: 35vw;
+}
+
+
+/* last work section starts here  */
+#last-work {
+    display: flex;
+}
+/* unexpected time tile section  */
+#unexpected-time{
+    /* background-color: red; */
+    width: 50vw;
+    padding: 3vw;
+    padding-left: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#unexpected-time h3{
+    font-family: canopee, sans-serif;
+    font-size: 5vw;
+}
+
+#unexpected-time img{
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+#talk{
+    /* background-color: red; */
+    padding: 3vw 5vw 3vw 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#talk strong{
+    font-size: 10vw;
+    font-family: canopee, sans-serif;
+}
+
+#talk #all-work-btn {
+    width: 90%;
+    height: 10vw;
+    margin-top: 0;
+}
+
+#talk #all-work-btn strong{
+    font-size: 4vw;
+}
+
+#work-last{
+    font-size: .8rem;
+}
+
+#work-last span{
+    font-weight: bold;
 }
