@@ -792,6 +792,7 @@ footer strong{
     transition: transform 1s;
 }
 
+
 #main-nav div:not(:last-of-type) a{
     letter-spacing: -5px;
 }
@@ -805,6 +806,31 @@ footer strong{
     transform: translateY(0%);
     transition: transform 1s .5s, letter-spacing .5s;
 }
+
+/* current active url animation  */
+a.active-link{
+    /* background-color: red; */
+    position: relative;
+    display: inline-block; 
+}
+
+a.active-link::before{
+    content: " ";
+    display: block;
+    background-color: #B83B12;
+    height: 1vw;
+    width: 0%;
+    transform: translateY(6vw);
+    transition: 1s;
+}
+
+#main-nav.active a.active-link::before{
+    width: 100%;
+    transition: 1s 1s;
+}
+
+
+/* active url animation finish */
 
 #main-nav .footer-link{
     position:absolute;
