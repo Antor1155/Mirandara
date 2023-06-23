@@ -1,0 +1,135 @@
+#work{
+    display: flex;
+}
+
+#work header{
+    width: auto;
+    height: 100vh;
+    position: static;
+    writing-mode: vertical-lr;
+    flex-direction: row-reverse;
+    padding: 2vw 1vw;
+    border-right: 1px solid;
+}
+
+#work nav{
+    display: flex;
+    height: 4vw;
+    /* background-color: red; */
+}
+
+#main-nav{
+    top: 0;
+    left: -100%;
+    /* position: relative; */
+
+    transition: left 1s .5s;
+}
+
+#main-nav.active{
+    left: 0;
+    transition: left 1s 0s;
+    animation: border-ani 2.5s;
+}
+
+@keyframes border-ani {
+    from{
+        border-radius: 0 5% 20% 0;
+    }
+    to{
+        border-radius: 0%
+    }
+}
+
+#animating-line{
+    display: none;
+}
+
+
+/* work section decoration starts here  */
+
+.work-card{
+    /* background-color: aqua; */
+    height: 100vh;
+    border: 1px solid #1d1d1bb8;
+    display: inline-block;
+    /* margin: 0; */
+    font-family: canopee, sans-serif;
+    font-size: 3vw;
+    padding:3vw 2vw;
+    writing-mode: vertical-lr;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.work-card p{
+    font-family: canopee, sans-serif;
+    font-size: 4vw;
+}
+
+.work-card small{
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.work-card small span{
+    background-color: #B83B12;
+    color: var(--body-color);
+    padding: .2rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+
+
+/* featured section design here  */
+
+#featured {
+    width: 40%;
+    padding: 3vw;
+}
+
+#featured h3{
+    display: inline-block;
+    font-family: canopee, sans-serif;
+    font-size: 10vw;
+    background-color: #1d1d1b;
+    color: var(--body-color);
+    padding:0 1vw;
+}
+
+#featured div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+
+    margin: 1vw 0 3vw 0;
+}
+
+#featured img{
+    width: 27%;
+}
+
+#featured p{
+    font-size: 1.4rem;
+}
+
+#featured p{
+    font-size: 1.4rem;
+}
+#featured p::first-letter{
+    font-size: 8vw;
+    font-weight: 500;
+    line-height: 6vw;
+    font-family: canopee, sans-serif;
+    font-feature-settings: "ss03";
+    margin:.5rem .3rem 0 .3rem;
+    padding:.4rem .2rem;
+    float: left;
+    color: var(--body-color);
+    background-color: #1d1d1b;
+}
