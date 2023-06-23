@@ -2,6 +2,7 @@
 const scroll = document.getElementById("scroll")
 let left = 0
 
+const talk = document.getElementById("talk")
 
 const cardTitle = document.getElementsByClassName("work-card")
 
@@ -13,13 +14,13 @@ Array.from(cardTitle).forEach((element, index) => {
         const ele = cardDescription[index]
         ele.classList.toggle("zero-width")
 
-        const zeroWidth = ele.classList.value.
-        includes("zero-width")
+        // const zeroWidth = ele.classList.value.
+        // includes("zero-width")
 
-        console.log(left)
-        if(!zeroWidth){
-            ele.scrollIntoView()
-        }
+        // console.log(left)
+        // if(!zeroWidth){
+        //     ele.scrollIntoView()
+        // }
         // else{
         //     scroll.style.left = left + 20 + "%"
         // }
@@ -41,7 +42,13 @@ window.addEventListener("wheel", (event) => {
         }
     }
 
-    scroll.style.left = left + "vw"
-    // console.log(scroll.style.left)
-    console.log("left is ", left)
+    scroll.style.left = left + "vw";
+    console.log(talk)
+    
 })
+
+
+function handleScroll (){
+    left = 0
+    scroll.style.left = left + "vw";
+}
