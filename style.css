@@ -281,7 +281,7 @@ nav:hover div:first-child {
 #article-right img{
     height: 47%;
     object-fit: cover;
-    margin-bottom: 7vh;
+    margin-bottom: 6vw;
 }
 #article-right p{
     font-family: canopee;
@@ -751,8 +751,8 @@ footer strong{
     position: fixed;
     top: -90%;
     z-index: 2;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -849,16 +849,24 @@ button.active-link::before{
 /* for mobile  */
 
 @media screen and (max-width:600px){
+    #main-nav{
+        top: -100%;
+    }
     .first-section{
+        display: none;
+    }
+
+    #builder {
+        margin-top: 1vw;
+        margin-bottom: -2vw;
+    }
+
+    .first-of-fourth > img {
         display: none;
     }
 
     .middle-child p:first-of-type {
         font-size: 1rem;
-    }
-
-    .first-of-fourth > img {
-        display: none;
     }
 
     .single-award:last-child {
@@ -867,5 +875,10 @@ button.active-link::before{
 
     #second-container img {
         height: 16vw;
+    }
+
+    #awards {
+        margin-top: 3vw;
+        padding: 2vw 0 1vw 0
     }
 }
