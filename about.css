@@ -1,0 +1,125 @@
+:root {
+    --test-color: rgba(255, 0, 0, 0.485);
+}
+
+body{
+    background-color: #C3BBB2;
+}
+
+main{
+    /* opacity: 0; */
+    transform: 1s;
+}
+
+#builder {
+    margin-top: 2vw;
+}
+
+h2{
+    font-size: 6vw;
+    margin: 2vw;
+    margin-bottom:3vw;
+    font-weight: 500;
+}
+
+h2 span{
+    font-weight: bolder;
+    display: inline-block;
+    /* background-color: red; */
+    /* transform: translateY(1vw); */
+}
+
+/* awards and trophies section start here  */
+
+#trophies {
+    display: flex;
+    margin: 0 2vw;
+    background-color: aquamarine;
+}
+
+#trophies > img{
+    width: auto;
+    height: 37vw;
+    max-width: 100%;
+}
+
+/* trophy cards container  */
+
+#t-container{
+    width: 100%;
+    border-left: 1px solid;
+    padding-left: 3vw;
+    margin-left: 3vw;
+    
+}
+
+/* single card  */
+.t-card{
+    border-bottom: 2px solid;
+    padding-bottom: 2vw;
+
+    background-color: var(--test-color);
+}
+
+.t-header{
+    display: flex;
+    /* background-color: red; */
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1vw;
+    padding-right: 2vw;
+}
+
+.t-header h4 {
+    font-size: 5vw;
+    font-family: canopee, sans-serif;
+}
+
+.t-header img{
+    width: 3vw;
+    transition: transform 1s;
+}
+
+.t-wrapper{
+    overflow: hidden;
+    background-color: yellow;
+    height: 0;
+    /* transition: height; */
+}
+
+.body-content{
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw;
+    /* transform: translateY(-90%); */
+    transition: transform 1s;
+    
+}
+
+/* single award in single card section  */
+.single-a{
+    display: flex;
+    align-items: center;
+    font-size: 1vw;
+
+}
+
+.single-a h5{
+    font-family: canopee, sans-serif;
+    font-size: 2.5vw;
+}
+
+.single-a img{
+    width: 7vw;
+    height: 6vw;
+    object-fit: cover;
+    margin-right: 2vw;
+    border: 1px solid;
+}
+
+
+/* animating open and close card on .t-card.open  */
+.t-card.open .t-wrapper{
+    height: 100%;
+}

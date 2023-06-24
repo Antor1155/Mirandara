@@ -14,19 +14,11 @@ Array.from(cardTitle).forEach((element, index) => {
         const ele = cardDescription[index]
         ele.classList.toggle("zero-width")
 
-        // const zeroWidth = ele.classList.value.
-        // includes("zero-width")
-
-        // console.log(left)
-        // if(!zeroWidth){
-        //     ele.scrollIntoView()
-        // }
-        // else{
-        //     scroll.style.left = left + 20 + "%"
-        // }
     })
 });
 
+
+// on scroll mouse Wheel chage the left of scroll section to scroll left to right 
 window.addEventListener("wheel", (event) => {
     const yVal = -(event.deltaY)
     if(yVal < 0){
