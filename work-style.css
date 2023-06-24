@@ -2,6 +2,8 @@
     display: flex;
     flex-wrap: nowrap;
     height: 100vh;
+    opacity: 0;
+    transition: opacity 1s 0s;
 }
 
 #work header{

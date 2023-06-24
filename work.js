@@ -52,3 +52,8 @@ function handleScroll (){
     left = 0
     scroll.style.left = left + "vw";
 }
+
+
+window.onload = function(){
+    document.querySelector("main").style.opacity = 1;
+}
