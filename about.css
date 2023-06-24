@@ -34,13 +34,19 @@ h2 span{
 #trophies {
     display: flex;
     margin: 0 2vw;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 
-#trophies > img{
-    width: auto;
+#trophies .article-left {
+    width: 35vw;
+    margin-top:4vw;
+}
+
+#trophies > div > img{
+    width: 35vw;
     height: 37vw;
-    max-width: 100%;
+    /* max-width: 35vw; */
+    border:1px solid;
 }
 
 /* trophy cards container  */
@@ -57,8 +63,7 @@ h2 span{
 .t-card{
     border-bottom: 2px solid;
     padding-bottom: 2vw;
-
-    background-color: var(--test-color);
+    margin-bottom: 2vw;
 }
 
 .t-header{
@@ -77,23 +82,28 @@ h2 span{
 
 .t-header img{
     width: 3vw;
-    transition: transform 1s;
+    transform: rotate(180deg);
+    transition: transform .7s;
 }
 
 .t-wrapper{
     overflow: hidden;
-    background-color: yellow;
-    height: 0;
-    /* transition: height; */
+    /* background-color: yellow; */
+
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows .7s;
 }
 
 .body-content{
-    background-color: aqua;
+    /* background-color: aqua; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 2vw;
-    /* transform: translateY(-90%); */
-    transition: transform 1s;
+
+    overflow: hidden;
+    transform: translateY(-15vw);
+    transition: transform 1.1s ease-out;
     
 }
 
@@ -121,5 +131,14 @@ h2 span{
 
 /* animating open and close card on .t-card.open  */
 .t-card.open .t-wrapper{
-    height: 100%;
+    grid-template-rows: 1fr;
+}
+
+.t-card.open .body-content{
+    transform: translateY(0vw);
+}
+
+.t-card.open .t-header img{
+    transform: rotate(0deg);
+
 }
