@@ -846,3 +846,26 @@ button.active-link::before{
 }
 
 
+/* for mobile  */
+
+@media screen and (max-width:600px){
+    .first-section{
+        display: none;
+    }
+
+    .middle-child p:first-of-type {
+        font-size: 1rem;
+    }
+
+    .first-of-fourth > img {
+        display: none;
+    }
+
+    .single-award:last-child {
+        display: none;
+    }
+
+    #second-container img {
+        height: 16vw;
+    }
+}
