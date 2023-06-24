@@ -7,8 +7,8 @@ body{
 }
 
 main{
-    /* opacity: 0; */
-    transform: 1s;
+    opacity: 0;
+    transition: opacity 1s;
 }
 
 #builder {
@@ -20,6 +20,10 @@ h2{
     margin: 2vw;
     margin-bottom:3vw;
     font-weight: 500;
+}
+
+h2:first-of-type{
+    text-align: center;
 }
 
 h2 span{
@@ -141,4 +145,36 @@ h2 span{
 .t-card.open .t-header img{
     transform: rotate(0deg);
 
+}
+
+
+/* hurran and statement section  */
+
+.brand{
+    background-color: #1C1C1A;
+    color: var(--body-color);
+    padding: 0 .5vw;
+    font-family: canopee, sans-serif;
+}
+
+/* image section  */
+
+#image-con{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 2vw 3vw 2vw;
+    gap: 4vw;
+}
+
+#image-con img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+/* first section  */
+.first-section{
+    justify-content: space-between;
 }
