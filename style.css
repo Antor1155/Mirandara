@@ -894,3 +894,29 @@ button.active-link::before{
         font-size: 13vw;
     }
 }
+
+
+
+/* index page animation on when first itme only  */
+
+#index-page {
+    background-color: red;
+    position: relative;
+    transform-origin: 50% 0%;
+    transform: translateY(100vh) rotate(0deg) scale(0.5);
+
+    animation: loading 2s forwards;
+}
+
+@keyframes loading {
+    0%{
+        transform: translateY(100vh) rotate(0deg) scale(0.5);
+    }
+
+    50%{
+        transform: translateY(50vh) rotate(0deg) scale(0.5);
+    }
+    100%{
+        transform: translateY(0vh) rotate(720deg) scale(1);
+    }
+}
