@@ -174,17 +174,22 @@ nav:hover div:first-child {
     justify-content: center;
 }
 
-.middle-child a{
-    font-size: 5vw;
-    font-weight: bold;
+.middle-child button{
+    font-size: 4.5vw;
+    margin-top: .5vw;
+    letter-spacing: -.2vw;
     font-family: canopee;
+
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 
     outline: 1px solid;
     outline-offset: -4vw;
     transition:outline-offset 1s, background-color 1s;
 }
 
-.middle-child:hover a {
+.middle-child:hover button {
     outline-offset: 0;
     background-color: #B8AEA3;
 }
@@ -331,13 +336,15 @@ nav:hover div:first-child {
     justify-content: space-between;
 }
 
-#fourth-section a{
+#fourth-section button{
+    /* outline: none; */
+    /* background-color: var(--body-color); */
     outline: none;
-    background-color: var(--body-color);
     letter-spacing: -0.4vw;
     font-family: domaine;
     font-weight: 500;
     line-height: 4vw;
+    text-align: start;
 }
 
 .first-of-fourth{
