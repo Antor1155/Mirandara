@@ -765,7 +765,7 @@ footer strong {
 
 #main-nav {
     position: fixed;
-    top: -90%;
+    top: -100%;
     z-index: 2;
     width: 100vw;
     height: 100vh;
