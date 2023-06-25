@@ -888,4 +888,9 @@ button.active-link::before{
         margin-top: 3vw;
         padding: 2vw 0 1vw 0
     }
+
+
+    #emailme p {
+        font-size: 13vw;
+    }
 }
