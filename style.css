@@ -32,6 +32,7 @@
 body::-webkit-scrollbar {
     display: none;
 }
+
 /* Hide scrollbar for IE, Edge and Firefox */
 body {
     -ms-overflow-style: none;
@@ -51,7 +52,7 @@ body {
     -webkit-user-select: none;
 }
 
-main{
+main {
     background-color: var(--body-color);
     transition: opacity 1s 1s;
 }
@@ -65,7 +66,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:0 3.5vh;
+    padding: 0 3.5vh;
 
     border-bottom: 1px solid black;
 
@@ -73,7 +74,7 @@ header {
     top: 0;
     background-color: var(--body-color);
     z-index: 5;
-    transition:background-color 1s 1s;
+    transition: background-color 1s 1s;
 }
 
 header small {
@@ -87,7 +88,7 @@ header h1 {
     margin: 2vw;
 }
 
-nav{
+nav {
     padding: 1vw;
 }
 
@@ -117,11 +118,11 @@ nav:hover div:first-child {
     margin: 4vh 2vw 5vh;
 }
 
-.first-section > div {
+.first-section>div {
     width: 30%;
 }
 
-.projectImg{
+.projectImg {
     width: 100%;
     height: 20vh;
     overflow: hidden;
@@ -135,7 +136,7 @@ nav:hover div:first-child {
     transition: scale 1.5s;
 }
 
-.projects:hover  img{
+.projects:hover img {
     scale: 1.15;
 }
 
@@ -160,7 +161,7 @@ nav:hover div:first-child {
 
 /* first section middle class */
 
-.middle-child{
+.middle-child {
     text-align: center;
     border: 1px solid;
     border-top: none;
@@ -174,7 +175,7 @@ nav:hover div:first-child {
     justify-content: center;
 }
 
-.middle-child button{
+.middle-child button {
     font-size: 4.5vw;
     margin-top: .5vw;
     letter-spacing: -.2vw;
@@ -186,7 +187,7 @@ nav:hover div:first-child {
 
     outline: 1px solid;
     outline-offset: -4vw;
-    transition:outline-offset 1s, background-color 1s;
+    transition: outline-offset 1s, background-color 1s;
 }
 
 .middle-child:hover button {
@@ -203,15 +204,15 @@ nav:hover div:first-child {
 
 /* heading name  */
 
-#builder{
+#builder {
     text-align: center;
     font-family: canopee, sans-serif;
     font-size: 28vw;
     color: var(--body-color);
     background-color: #1d1d1b;
 
-    padding-left: 0; 
-    padding-right: 0; 
+    padding-left: 0;
+    padding-right: 0;
     width: 96%;
     margin: auto;
     border-radius: 5px;
@@ -222,14 +223,14 @@ nav:hover div:first-child {
 
 /* second section article here  */
 
-#second-section{
+#second-section {
     /* background-color: rgb(124, 145, 145); */
     padding: 2vh 2vw;
 
     display: flex;
 }
 
-.article-left{
+.article-left {
     width: 32%;
     padding-top: 2vw;
     padding-right: 3vw;
@@ -239,7 +240,7 @@ nav:hover div:first-child {
 
 
 
-.article-left h2{
+.article-left h2 {
     font-family: canopee, sans-serif;
     font-size: 8vw;
     font-weight: 400;
@@ -247,9 +248,10 @@ nav:hover div:first-child {
 
     line-height: 3vw;
     border-bottom: 1px solid #68645f;
-    
+
 }
-.article-left h2:nth-child(2){
+
+.article-left h2:nth-child(2) {
     font-size: 11vw;
     margin-top: 6vw;
     margin-bottom: 4.5vw;
@@ -257,17 +259,18 @@ nav:hover div:first-child {
     font-weight: bold;
 }
 
-#second-section img{
+#second-section img {
     width: 100%;
     margin-bottom: 4vh;
 }
 
-.article-left p{
+.article-left p {
     font-size: 2vw;
     font-weight: 500;
     letter-spacing: -1px;
 }
-.article-left p::first-letter{
+
+.article-left p::first-letter {
     font-size: 7vw;
     font-weight: 500;
     line-height: 6vw;
@@ -283,12 +286,13 @@ nav:hover div:first-child {
 }
 
 /* article right design  */
-#article-right img{
+#article-right img {
     height: 47%;
     object-fit: cover;
     margin-bottom: 6vw;
 }
-#article-right p{
+
+#article-right p {
     font-family: canopee;
     text-transform: capitalize;
     font-size: 7vw;
@@ -302,8 +306,8 @@ nav:hover div:first-child {
     text-decoration: line-through 1px #573e31;
 }
 
-#article-right p:last-child{
-   margin-bottom: -10vw;
+#article-right p:last-child {
+    margin-bottom: -10vw;
 }
 
 #inspiration {
@@ -314,7 +318,7 @@ nav:hover div:first-child {
     padding: 2vw;
 }
 
-#websiteT{
+#websiteT {
     font-family: canopee, sans-serif;
     font-size: 26vw;
     color: var(--body-color);
@@ -324,19 +328,19 @@ nav:hover div:first-child {
     line-height: 19vw;
 }
 
-#inspiration img{
+#inspiration img {
     width: 20vw;
 }
 
 /* fourth section start form here  */
 
-#fourth-section{
+#fourth-section {
     padding: 2vw;
     display: flex;
     justify-content: space-between;
 }
 
-#fourth-section button{
+#fourth-section button {
     /* outline: none; */
     /* background-color: var(--body-color); */
     outline: none;
@@ -347,42 +351,43 @@ nav:hover div:first-child {
     text-align: start;
 }
 
-.first-of-fourth{
+.first-of-fourth {
     padding-right: 3vw;
     margin-right: 3vw;
     border-right: 1px solid;
 }
 
-.first-of-fourth > img{
+.first-of-fourth>img {
     width: 100%;
 }
 
-.to-flex{
+.to-flex {
     display: flex;
     margin-bottom: 3vw;
 }
 
-.to-flex > div{
+.to-flex>div {
     width: 45%;
 }
 
-.to-flex .middle-child{
+.to-flex .middle-child {
     text-align: start;
     border-left: none;
     padding-right: 3vw;
     margin-right: 3vw;
 }
 
-.to-flex .projectImg{
+.to-flex .projectImg {
     border: none;
 }
-#last-of-fourth{
+
+#last-of-fourth {
     margin: 1vw 0 0 0;
     padding: 0;
     border: none;
 }
 
-#last-of-fourth h2:first-child{
+#last-of-fourth h2:first-child {
     font-size: 6.8vw;
 }
 
@@ -391,9 +396,9 @@ nav:hover div:first-child {
     margin-top: 2vw;
     border: 1px solid;
     height: 12vw;
-    width:100% ;
+    width: 100%;
     overflow: hidden;
-    background-color:#c7bfb5 ;
+    background-color: #c7bfb5;
     border-radius: 50%;
 
     position: relative;
@@ -401,21 +406,21 @@ nav:hover div:first-child {
 
     justify-content: center;
     align-items: center;
-    
+
 }
 
-#all-work-btn strong{
+#all-work-btn strong {
     font-size: 5vw;
     font-family: canopee, sans-serif;
 
     transition: transform 1s;
 }
 
-#all-work-btn:hover strong{
+#all-work-btn:hover strong {
     transform: translateX(250%);
 }
 
-#all-work-btn img{
+#all-work-btn img {
     display: block;
     position: absolute;
     transform: translateX(-250%);
@@ -423,16 +428,16 @@ nav:hover div:first-child {
     transition: transform 1s;
 }
 
-#all-work-btn:hover img{
+#all-work-btn:hover img {
     transform: translatex(0);
 }
 
 
 /* award section start here  */
 
-#awards{
+#awards {
     /* background-color: aquamarine; */
-    margin:2vw;
+    margin: 2vw;
     border-top: 1px solid;
     border-bottom: 1px solid;
 
@@ -442,18 +447,18 @@ nav:hover div:first-child {
     text-align: center;
 }
 
-.single-award{
+.single-award {
     display: flex;
     align-items: center;
 }
 
-.single-award strong{
+.single-award strong {
     font-family: canopee, sans-serif;
     font-size: 4vw;
     font-weight: 500;
 }
 
-.single-award > strong{
+.single-award>strong {
     font-size: 11vw;
     margin-top: -1vw;
     font-family: 'Times New Roman', Times, serif;
@@ -462,19 +467,19 @@ nav:hover div:first-child {
 
 /* fifth section start form here  */
 
-#fifth-section{
-    margin:4vw 2vw 2vw 2vw;
+#fifth-section {
+    margin: 4vw 2vw 2vw 2vw;
 }
 
 .first-container {
     display: flex;
 }
 
-.first-container > div{
+.first-container>div {
     width: 50%;
 }
 
-.largeTxt{
+.largeTxt {
     font-family: canopee, sans-serif;
     font-size: 27vw;
     font-weight: 500;
@@ -493,11 +498,11 @@ nav:hover div:first-child {
     object-fit: cover;
 }
 
-#second-container{
+#second-container {
     text-align: right;
 }
 
-#second-container img{
+#second-container img {
     height: 19vw;
     border: 1px solid;
 }
@@ -506,12 +511,12 @@ nav:hover div:first-child {
     display: flex;
 }
 
-#atrisan{
+#atrisan {
     font-size: 23vw;
     font-family: canopee, sans-serif;
     background-color: #1d1d1b;
     color: var(--body-color);
-    padding:0 1vw;
+    padding: 0 1vw;
 
     line-height: 26vw;
 
@@ -526,18 +531,19 @@ nav:hover div:first-child {
     padding: 2vw;
 }
 
-.third-section-div strong{
+.third-section-div strong {
     font-size: 6vw;
     font-family: canopee, sans-serif;
     letter-spacing: -0.2vw;
 
 }
-.third-section-div span{
+
+.third-section-div span {
     text-decoration: underline dashed;
 
 }
 
-.big-font{
+.big-font {
     font-size: 1.8vw;
     /* background-color: yellow; */
 }
@@ -545,8 +551,8 @@ nav:hover div:first-child {
 
 
 /* employee cards section starts form here  */
-#card-section{
-    margin: 3vw 2vw ;
+#card-section {
+    margin: 3vw 2vw;
     padding-bottom: 6vw;
 
     display: flex;
@@ -556,26 +562,26 @@ nav:hover div:first-child {
     border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 }
 
-.card-wrapper{
+.card-wrapper {
     border: 3px solid;
     padding: 1vw;
     border-radius: 5px;
     width: 38vw;
 
     background-color: var(--body-color);
-    box-shadow:0 3px 5px  rgba(0, 0, 0, 0.331);
-    transition:transform .5s;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.331);
+    transition: transform .5s;
 }
 
-.card-wrapper:not(:first-child){
+.card-wrapper:not(:first-child) {
     margin-left: -20vw;
 }
 
-.card-wrapper:hover ~ .card-wrapper{
+.card-wrapper:hover~.card-wrapper {
     transform: translateX(15vw);
 }
 
-.card-wrapper:hover{
+.card-wrapper:hover {
     background-color: #B8AEA3;
 }
 
@@ -592,16 +598,16 @@ nav:hover div:first-child {
 }
 
 .card .big-font {
-    text-decoration:1px underline rgb(82, 76, 76, .4);
+    text-decoration: 1px underline rgb(82, 76, 76, .4);
 }
 
-.card > div{
+.card>div {
     display: flex;
     align-items: center;
     margin-top: 3vw;
 }
 
-.card img{
+.card img {
     width: 32px;
     height: 32px;
     border-radius: 50%;
@@ -609,21 +615,22 @@ nav:hover div:first-child {
     filter: grayscale(1);
 }
 
-.card strong{
+.card strong {
     font-family: canopee, sans-serif;
     font-size: 2vw;
 }
-.card strong + P{
+
+.card strong+P {
     font-size: .9rem;
 }
 
-.card span{
+.card span {
     text-decoration: underline;
 }
 
 
 /* email me section starts here  */
-#emailme{
+#emailme {
     margin: 2vw;
     margin-bottom: 0;
     padding: 2vw 0;
@@ -631,7 +638,7 @@ nav:hover div:first-child {
     border-bottom: 1px solid;
 
     white-space: nowrap;
-    overflow:hidden ;
+    overflow: hidden;
 }
 
 #emailme p {
@@ -642,21 +649,22 @@ nav:hover div:first-child {
     animation: scroll 4s linear infinite;
 }
 
-#emailme:hover  p {
+#emailme:hover p {
     animation-play-state: paused;
 }
 
 
 @keyframes scroll {
-    0%{
+    0% {
         transform: translateX(0%);
     }
-    100%{
+
+    100% {
         transform: translateX(calc(-100% - 24px));
     }
 }
 
-#emailme a{
+#emailme a {
     font-family: canopee, sans-serif;
     background-color: #1d1d1b;
     color: var(--body-color);
@@ -666,40 +674,40 @@ nav:hover div:first-child {
 /* footer section start form here  */
 
 footer {
-    padding:1vw 2vw;
+    padding: 1vw 2vw;
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
 }
 
-footer div:first-child{
+footer div:first-child {
     display: flex;
     align-items: center;
 }
 
 
-footer a{
+footer a {
     font-family: canopee, sans-serif;
     font-weight: 500;
     font-size: 1.6vw;
 }
 
-footer a span{
+footer a span {
     font-family: editorial;
     font-weight: 100;
     font-size: 1rem;
 }
 
-footer img{
+footer img {
     width: 2vw;
     margin: 1vw;
 }
 
-footer div:last-child a{
+footer div:last-child a {
     font-size: 1.4vw;
 }
 
-footer strong{
+footer strong {
     margin: .2vw;
     font-size: 4vw;
     display: inline-block;
@@ -710,33 +718,34 @@ footer strong{
 
 
 /* animating nav bar to change color and div rotation  */
-.black-nav{
+.black-nav {
     background-color: #191917;
     color: var(--body-color);
-    transition:background-color 1s;
+    transition: background-color 1s;
 }
 
-.black-nav div{
+.black-nav div {
     background-color: var(--body-color);
 }
 
-.black-nav nav:hover div:first-of-type{
-    transform:translateX(-3px) rotate(55deg);
-}
-.black-nav nav:hover div:last-of-type{
-    transform:translateX(3px) rotate(-55deg);
+.black-nav nav:hover div:first-of-type {
+    transform: translateX(-3px) rotate(55deg);
 }
 
-.black-nav nav div:first-of-type{
-    transform:rotate(55deg);
+.black-nav nav:hover div:last-of-type {
+    transform: translateX(3px) rotate(-55deg);
+}
+
+.black-nav nav div:first-of-type {
+    transform: rotate(55deg);
     position: absolute;
 }
 
-.black-nav nav div:last-of-type{
-    transform:rotate(-55deg);
+.black-nav nav div:last-of-type {
+    transform: rotate(-55deg);
 }
 
-#animating-line{
+#animating-line {
     position: absolute;
     height: 2px;
     width: 60%;
@@ -746,7 +755,7 @@ footer strong{
     transition: transform 1s 0s;
 }
 
-.black-nav #animating-line{
+.black-nav #animating-line {
     transform: translateX(200vw);
     transition: transform 1s .4s;
 }
@@ -754,7 +763,7 @@ footer strong{
 
 /* main nav to slide down and go up styling start here  */
 
-#main-nav{
+#main-nav {
     position: fixed;
     top: -90%;
     z-index: 2;
@@ -770,26 +779,28 @@ footer strong{
 }
 
 /* main active */
-#main-nav.active{
+#main-nav.active {
     top: 0;
     transition: top 1s 0s;
     animation: border-ani 2.5s;
 }
 
 @keyframes border-ani {
-    from{
+    from {
         border-radius: 0 0 50% 20%;
     }
-    to{
+
+    to {
         border-radius: 0%
     }
 }
 
-#main-nav div{
+#main-nav div {
     overflow: hidden;
 }
 
-#main-nav button, #main-nav a{
+#main-nav button,
+#main-nav a {
     font-size: 11vw;
     font-family: canopee, sans-serif;
     color: var(--body-color);
@@ -802,28 +813,29 @@ footer strong{
 }
 
 
-#main-nav div:not(:last-of-type) button{
+#main-nav div:not(:last-of-type) button {
     letter-spacing: -5px;
 }
 
-#main-nav div:not(:last-of-type) button:hover{
+#main-nav div:not(:last-of-type) button:hover {
     letter-spacing: -1px;
 }
 
 /* main active  */
-#main-nav.active button, #main-nav.active a{
+#main-nav.active button,
+#main-nav.active a {
     transform: translateY(0%);
     transition: transform 1s .5s, letter-spacing .5s;
 }
 
 /* current active url animation  */
-button.active-link{
+button.active-link {
     /* background-color: red; */
     position: relative;
-    display: inline-block; 
+    display: inline-block;
 }
 
-button.active-link::before{
+button.active-link::before {
     content: " ";
     display: block;
     background-color: #B83B12;
@@ -833,7 +845,7 @@ button.active-link::before{
     transition: 1s;
 }
 
-#main-nav.active button.active-link::before{
+#main-nav.active button.active-link::before {
     width: 100%;
     transition: 1s 1s;
 }
@@ -841,13 +853,14 @@ button.active-link::before{
 
 /* active url animation finish */
 
-#main-nav .footer-link{
-    position:absolute;
-    bottom:0;
+#main-nav .footer-link {
+    position: absolute;
+    bottom: 0;
     margin: 2vw;
     display: flex;
 }
-#main-nav .footer-link a{
+
+#main-nav .footer-link a {
     font-size: 1vw;
     margin-left: 10px;
 }
@@ -855,11 +868,12 @@ button.active-link::before{
 
 /* for mobile  */
 
-@media screen and (max-width:600px){
-    #main-nav{
+@media screen and (max-width:600px) {
+    #main-nav {
         top: -100%;
     }
-    .first-section{
+
+    .first-section {
         display: none;
     }
 
@@ -868,7 +882,7 @@ button.active-link::before{
         margin-bottom: -2vw;
     }
 
-    .first-of-fourth > img {
+    .first-of-fourth>img {
         display: none;
     }
 
@@ -889,7 +903,7 @@ button.active-link::before{
         padding: 2vw 0 1vw 0
     }
 
-    
+
     #emailme p {
         font-size: 13vw;
     }
@@ -899,24 +913,29 @@ button.active-link::before{
 
 /* index page animation on when first itme only  */
 
-#index-page {
-    background-color: red;
-    position: relative;
-    transform-origin: 50% 0%;
-    transform: translateY(100vh) rotate(0deg) scale(0.5);
+#index-page header {
+    overflow: hidden;
+}
 
-    animation: loading 2s forwards;
+#index-page {
+    transform-origin: 50% 0%;
+    position: relative;
+    animation: loading 2.5s;
 }
 
 @keyframes loading {
-    0%{
-        transform: translateY(100vh) rotate(0deg) scale(0.5);
+    0% {
+        top: 100vh;
+        transform: scale(.5);
     }
 
-    50%{
-        transform: translateY(50vh) rotate(0deg) scale(0.5);
+    30% {
+        top: 50vh;
+        transform: scale(.5);
     }
-    100%{
-        transform: translateY(0vh) rotate(720deg) scale(1);
+
+    100% {
+        top: 0vh;
+        transform: scale(1) rotate(720deg);
     }
 }
