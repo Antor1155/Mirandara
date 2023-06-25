@@ -26,7 +26,7 @@
 }
 
 /* this mian nav only in tab computer display */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) and (orientation: landscape) {
     #work header {
         width: auto;
         height: 100vh;
@@ -345,7 +345,7 @@
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px), (orientation: portrait) {
     #work{
         display: block;
         max-height: 100vh;
@@ -422,3 +422,7 @@
     }
 
 }
+/* 
+@media screen and (min-width: 600px) and (orientation: portrait){
+
+} */
