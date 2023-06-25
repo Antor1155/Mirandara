@@ -904,6 +904,10 @@ button.active-link::before {
 /* for mobile  */
 
 @media screen and (max-width:600px) {
+    header{
+        height: 10vh;
+    }
+
     #main-nav {
         top: -110%;
     }
