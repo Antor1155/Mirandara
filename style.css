@@ -916,8 +916,12 @@ button.active-link::before {
 #index-page header {
     overflow: hidden;
 }
+#index-page{
+    display: none;
+}
 
-#index-page {
+#index-page.loaded {
+    display: block;
     transform-origin: 50% 0%;
     position: relative;
     animation: loading 2.5s;

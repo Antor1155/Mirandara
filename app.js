@@ -18,3 +18,7 @@ function handleLink(targetLink){
         window.location.href = "/" + targetLink
     }, 2000);
 }
+
+window.onload = () =>{
+    document.getElementById("index-page").classList.add("loaded")
+}
